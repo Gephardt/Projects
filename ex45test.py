@@ -6,7 +6,9 @@
 # CURRENT PROBLEM: how to choose a different room while still in the while loop
 # CURRENT PROBLEM: do not know how to work the interplay amoung functions. Don't know how to return needed variables to other functions
 
+
 from random import randint
+
      
 class Room(object):
      def __init__(self, red_ball, blue_ball, orange_ball):
@@ -29,6 +31,7 @@ class Bucket(object):
         print "~" * 30
         print "ORANGE BUCKET HAS: %r" % self.orange_ball_count
         print "~" * 30
+        
         
 def distribute():
     print
@@ -81,8 +84,8 @@ def choose_room(room_choice):
             else:
                 total_orange_ball_count = orange_ball_count + r1_orange
                 print total_orange_ball_count
-            
-        elif room_choice == 'room2':
+                
+         elif room_choice == 'room2':
             color = raw_input("Do you want red, blue or orange balls ? ")
             if color == 'red':
                 total_red_ball_count = red_ball_count + r2_red
